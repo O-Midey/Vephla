@@ -1,0 +1,121 @@
+@import url("http://fonts.cdnfonts.com/css/futura-lt");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap");
+
+:root {
+  --purple: rgba(125, 38, 205, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+button {
+  cursor: pointer;
+}
+
+.logo {
+  font-family: "Futura LT", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  font-family: "Futura LT", sans-serif;
+  line-height: 38px;
+  letter-spacing: 2px;
+}
+
+nav {
+  display: flex;
+  display: -webkit-flex; /** for safari **/
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 0.5px 2px 0px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  max-width: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav--middle ul {
+  list-style-type: none;
+}
+
+.nav--middle ul li {
+  display: inline-block;
+  padding: 0 30px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.nav--middle ul li a:hover {
+  color: var(--purple);
+  border-bottom: 5px solid var(--purple);
+  transition: all 0.1s ease;
+}
+
+.sign-up {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 16px;
+  background-color: white;
+  color: var(--purple);
+}
+
+nav .sign-up {
+  padding: 5px 25px;
+  border: 1px solid var(--purple);
+  border-radius: 7px;
+}
+
+nav .sign-up a {
+  color: var(--purple);
+}
+
+.sign-up:hover {
+  color: white;
+  background-color: var(--purple);
+  transition: all 0.3s ease-in-out;
+}
+
+.form-content {
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  display: flex;
+  display: -webkit-flex; /** for safari **/
+  align-items: stretch;
+  min-height: 560px;
+  margin-top: 30px;
+}
+
+.left-col {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.right-col {
+  padding: 10px 30px;
+}
+
+.right-col > h4 {
+  padding: 10px;
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+input {
+  padding: 10px 15px 10px 25px;
+}
