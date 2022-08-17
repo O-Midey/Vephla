@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="http://fonts.cdnfonts.com/css/futura-lt" rel="stylesheet" />
@@ -8,61 +9,84 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap"
-      rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Mulish" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500&display=swap" rel="stylesheet">
     <title>Sign In</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <!--Navigation section-->
     <nav>
-      <div>
-        <a href="index.html"><h3 class="logo">Vephla</h3></a>
-      </div>
-      <div class="nav--middle">
-        <ul>
-          <li><a href="#"> Home </a></li>
-          <li><a href="#"> Courses </a></li>
-          <li><a href="#"> About Us </a></li>
-          <li><a href="#"> Contact Us </a></li>
-        </ul>
-      </div>
-      <div>
-        <a href="#"><button class="sign-up">Sign Up</button></a>
-      </div>
+        <div>
+            <a href="index.html">
+                <h3 class="logo">Vephla</h3>
+            </a>
+        </div>
+        <div class="nav--middle">
+            <ul>
+                <li><a href="#"> Home </a></li>
+                <li><a href="#"> Courses </a></li>
+                <li><a href="#"> About Us </a></li>
+                <li><a href="#"> Contact Us </a></li>
+            </ul>
+        </div>
+        <div>
+            <a href="#"><button class="sign-up">Sign Up</button></a>
+        </div>
     </nav>
 
     <!-- container section -->
     <div class="form-content">
-      <div class="form-container">
-        <div class="left-col">
-          <img
-            src="http://yevandy.com/wp-content/uploads/2019/05/david-olubaji-1224456-unsplash.jpg"
-            width="400px"
-            height="400px"
-          />
-        </div>
-        <div class="right-col">
-          <h4>Sign In</h4>
-          <form>
-            <p>Email Address</p>
-            <input
-              class="email-input"
-              type="email"
-              placeholder="johndoe@gmail.com"
-            />
-            <p>Password</p>
-            <input
-              class="email-input"
-              type="email"
-              placeholder="johndoe@gmail.com"
-            />
-            <div>
-                <div></div>
+        <div class="form-container">
+            <div class="left-col"></div>
+            <div class="right-col">
+                <h4>Sign In</h4>
+                <form>
+                    <p>Email Address</p>
+                    <input type="email" placeholder="johndoe@gmail.com" />
+                    <p>Password</p>
+                    <div class="password-section">
+                        <input type="password" placeholder="••••••••••" />
+                        <img class="eyes" src="eye.png" />
+                    </div>
+                    <div class="remember-me">
+                        <div class="remember-me">
+                            <input type="checkbox" id="remember-me" />
+                            <label style="margin-left: 0.5em" for="remember-me">Remember Me</label>
+                        </div>
+                        <div>
+                            <a href="#" style="text-decoration: none">
+                                <p class="purple-text">Forgot Password</p>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="sign-up">Sign Up</button>
+                </form>
+
+                <div class="sign-in-options">
+                    <h4>Or Sign in with</h4>
+                    <div class="log-in-options-div ">
+                        <div class="log-in-options">
+                            <img src="google.png">
+                            <p class="mulish">Google</p>
+                        </div>
+                        <div class="log-in-options">
+                            <img src="apple.png">
+                            <p class="mulish">Apple</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center;">
+                    <p>Don't have an account? <a href="#" class="purple-text" style="text-decoration: none;">Create
+                            One</a></p>
+                </div>
             </div>
-          </form>
+
         </div>
-      </div>
     </div>
-  </body>
+</body>
+
 </html>

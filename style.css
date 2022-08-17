@@ -1,3 +1,5 @@
+/************** default styles **********************/
+
 @import url("http://fonts.cdnfonts.com/css/futura-lt");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap");
 
@@ -20,6 +22,20 @@ button {
   cursor: pointer;
 }
 
+input {
+  font-family: "Poppins";
+}
+
+textarea {
+  padding: 5px;
+  resize: none;
+  font-family: "Poppins";
+  width: 100%;
+  border-color: #939393;
+}
+
+/********************** Navbar ***********************/
+
 .logo {
   font-family: "Futura LT", sans-serif;
   font-weight: 400;
@@ -27,6 +43,9 @@ button {
   font-family: "Futura LT", sans-serif;
   line-height: 38px;
   letter-spacing: 2px;
+}
+.purple-text {
+  color: var(--purple) !important;
 }
 
 nav {
@@ -87,6 +106,8 @@ nav .sign-up a {
   transition: all 0.3s ease-in-out;
 }
 
+/***************** sign-up page styles ******************/
+
 .form-content {
   display: flex;
   justify-content: center;
@@ -96,26 +117,237 @@ nav .sign-up a {
   display: flex;
   display: -webkit-flex; /** for safari **/
   align-items: stretch;
-  min-height: 560px;
+  justify-content: center;
+  width: 80vw;
+  min-height: 70vh;
   margin-top: 30px;
+  gap: 0;
+}
+
+.form-container p {
+  padding: 10px 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #525252;
 }
 
 .left-col {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  width: 50%;
+  background-image: url("http://yevandy.com/wp-content/uploads/2019/05/david-olubaji-1224456-unsplash.jpg");
+  background-size: cover;
 }
 
 .right-col {
-  padding: 10px 30px;
+  width: 45%;
+  padding: 10px 50px;
+  border: 1px solid #dedede;
+  border-radius: 0px 24px 24px 0px;
 }
 
 .right-col > h4 {
-  padding: 10px;
+  padding: 15px;
   margin: 0;
   font-size: 24px;
   text-align: center;
 }
 
-input {
-  padding: 10px 15px 10px 25px;
+.right-col input {
+  padding: 10px 15px 10px 45px;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+}
+
+.right-col input:focus {
+  outline: none;
+  border: 1px solid #dedede;
+}
+
+input::placeholder {
+  font-family: "Poppins";
+}
+
+.right-col input[type="email"] {
+  width: 100%;
+  background-image: url("envelope.png");
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  background-size: 15px 13px;
+}
+
+.right-col input[type="password"] {
+  width: 100%;
+  background-image: url("padlock.png");
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  background-size: 17px 15px;
+  position: relative;
+}
+
+.password-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.eyes {
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  right: 18%;
+}
+
+.remember-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.remember-me .purple-text {
+  font-size: 12px;
+}
+
+form button.sign-up {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #979797;
+  border-radius: 5px;
+  background-color: var(--purple);
+  color: white;
+}
+
+form button.sign-up:hover {
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+.sign-in-options > h4 {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.mulish {
+  font-family: "mulish", sans-serif !important;
+  font-size: 16px;
+  color: black !important;
+}
+
+.log-in-options-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.log-in-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  width: 45%;
+  border: 1px solid var(--purple);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/************* contact us page styles ***********************/
+
+.purple-col {
+  width: 30%;
+  text-align: left;
+  background-color: var(--purple);
+  padding: 10px 30px;
+  color: white !important;
+  border-radius: 10px 0 0 10px;
+  padding-bottom: 60px;
+}
+
+.purple-col * {
+  color: white !important;
+}
+
+.purple-col > h4 {
+  padding: 15px 0;
+  margin: 0;
+  font-size: 24px;
+  color: white !important;
+}
+
+.contact-details {
+  margin-top: 30px;
+}
+
+.contact-card {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  align-items: center;
+}
+
+.rounded-div {
+  background-color: rgba(168, 110, 222, 1);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-card + .contact-card {
+  margin-top: 15px;
+}
+
+.right-col input[type="text"] {
+  width: 100%;
+  background-image: url("user.png");
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  background-size: 15px 13px;
+}
+
+.right-col input[type="text"]:last-of-type {
+  width: 100%;
+  background-image: url("note.png");
+  background-repeat: no-repeat;
+  background-position: 5% 50%;
+  background-size: 20px 15px;
+}
+
+textarea {
+  padding: 5px;
+  resize: none;
+  font-family: "Poppins";
+  width: 100%;
+  border-color: #939393;
+}
+
+textarea::placeholder {
+  font-family: "poppins";
+}
+
+form button.send-message {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #979797;
+  border-radius: 5px;
+  background-color: var(--purple);
+  color: white;
+  font-family: "Poppins";
+  margin-bottom: 30px;
+}
+
+form button.send-message:hover {
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+form button.send-message:focus,
+form button.send-message:active {
+  outline: none;
+  border: 1px solid #dedede;
 }
