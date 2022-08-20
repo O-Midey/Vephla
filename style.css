@@ -135,9 +135,10 @@ nav .sign-up a {
 .left-col {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  width: 50%;
+  width: 30%;
   background-image: url("http://yevandy.com/wp-content/uploads/2019/05/david-olubaji-1224456-unsplash.jpg");
   background-size: cover;
+  flex-shrink: 2;
 }
 
 .right-col {
@@ -196,7 +197,7 @@ input::placeholder {
   display: inline-block;
   cursor: pointer;
   position: absolute;
-  right: 18%;
+  right: 26%;
 }
 
 .remember-me {
@@ -231,7 +232,7 @@ form button.sign-up:hover {
 
 .mulish {
   font-family: "mulish", sans-serif !important;
-  font-size: 16px;
+  font-size: 20px;
   color: black !important;
 }
 
@@ -350,4 +351,18 @@ form button.send-message:focus,
 form button.send-message:active {
   outline: none;
   border: 1px solid #dedede;
+}
+
+/************** Sign up page styles ************/
+
+.sign-up-left-col {
+  width: 50%;
+  background-image: url("cut-in-a-moment-rotRaep7gpY-unsplash.png");
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 30%;
+  background-size: cover;
+  flex-shrink: 2;
+  background-position: 8%;
 }
