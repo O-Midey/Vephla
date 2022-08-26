@@ -1,7 +1,8 @@
-/************** default seyestyles **********************/
+/************** default styles **********************/
 
 @import url("http://fonts.cdnfonts.com/css/futura-lt");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 
 :root {
   --purple: rgba(125, 38, 205, 1);
@@ -37,6 +38,14 @@ textarea {
   border-color: #939393;
 }
 
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
 /********************** Navbar ***********************/
 
 .logo {
@@ -52,6 +61,8 @@ textarea {
 }
 
 nav {
+  overflow: hidden;
+  width: 100%;
   display: flex;
   display: -webkit-flex; /** for safari **/
   flex-direction: row;
@@ -109,7 +120,7 @@ nav .sign-up a {
   transition: all 0.3s ease-in-out;
 }
 
-/***************** sign-up page styles ******************/
+/***************** sign-in page styles ******************/
 
 .form-content {
   display: flex;
@@ -266,6 +277,13 @@ form button.sign-up:hover {
 
 /************* contact us page styles ***********************/
 
+.page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
 .contact-us--left-col {
   width: 40%;
   background-image: url("african-american-man-customer-support-operator-with-hands-free-headset-working-office 1.png");
@@ -278,14 +296,6 @@ form button.sign-up:hover {
   margin-top: 30px;
 }
 
-.contact-card {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  gap: 20px;
-  align-items: center;
-}
-
 .rounded-div {
   background-color: rgba(168, 110, 222, 1);
   height: 30px;
@@ -294,10 +304,6 @@ form button.sign-up:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.contact-card + .contact-card {
-  margin-top: 15px;
 }
 
 .right-col input[type="text"] {
@@ -377,6 +383,162 @@ form button.send-message:active {
   background-repeat: no-repeat;
   background-position: 5% 50%;
   background-size: 15px 15px;
+}
+
+/**************** contact us page styles ****************/
+
+.sub-div:first-of-type {
+  text-align: center;
+  width: 60%;
+  margin-top: 20px;
+}
+
+.sub-div {
+  text-align: center;
+  width: 60%;
+  margin-top: 60px;
+}
+
+.contact-card-div {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: stretch;
+  max-width: 325px;
+  background-color: white;
+  border: 1px solid #f7f7f7;
+  border-radius: 10px;
+  padding: 20px 65px;
+  text-align: center;
+  box-shadow: 0px 0px 10px 0px #0000001a;
+  min-width: 250px;
+}
+
+.purple-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #e5d4f5;
+  margin-bottom: 20px;
+}
+
+.contact-card > h4 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.contact-card > p {
+  font-size: 12px;
+  line-height: 24px;
+  margin-top: 10px;
+}
+
+.contact-card > h5 {
+  line-height: 24px;
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.social-icon-div {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+.social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px #0000001a;
+}
+
+.social-icon:hover {
+  transform: scale(1.05);
+  transition: 0.2s ease;
+}
+
+/******************** footer styles ********************/
+
+footer {
+  background: #190829;
+  padding: 30px 40px;
+}
+
+.first-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.white-border-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.round-white-border {
+  border: 1px solid white;
+  width: 30px;
+  height: 30px;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+}
+
+.footer-links h3 {
+  font-size: 20px;
+  line-height: 32px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  font-size: 16px;
+  line-height: 32px;
+  text-decoration: none;
+  color: white;
+  font-weight: 200;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-links li {
+  list-style-type: none;
+}
+
+.second-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  color: white;
+  align-items: center;
+}
+
+.footer-links.extra-links {
+  display: flex;
+  gap: 5vw;
 }
 
 /********************************** media queries **********************************/
