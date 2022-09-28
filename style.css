@@ -38,24 +38,12 @@ textarea {
   border-color: #939393;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Raleway", sans-serif;
+.raleway {
+  font-family: "Raleway";
 }
 
 /********************** Navbar ***********************/
 
-.logo {
-  font-family: "Futura LT", sans-serif;
-  font-weight: 400;
-  font-size: 32px;
-  font-family: "Futura LT", sans-serif;
-  line-height: 38px;
-  letter-spacing: 2px;
-}
 .purple-text {
   color: var(--purple) !important;
 }
@@ -78,11 +66,16 @@ nav a {
   color: black;
 }
 
-.nav--middle ul {
+.nav--div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav--div ul {
   list-style-type: none;
 }
 
-.nav--middle ul li {
+.nav--div ul li {
   display: inline-block;
   padding: 0 30px;
   font-style: normal;
@@ -90,19 +83,22 @@ nav a {
   font-size: 16px;
 }
 
-.nav--middle ul li a:hover {
+.nav--div ul li a:hover {
   color: var(--purple);
   border-bottom: 5px solid var(--purple);
   transition: all 0.1s ease;
 }
+.icons + .icons {
+  margin-left: 5px;
+}
 
-.sign-up {
+/* .sign-up {
   font-family: "Poppins";
   font-weight: 600;
   font-size: 16px;
   background-color: white;
   color: var(--purple);
-}
+} */
 
 nav .sign-up {
   padding: 5px 25px;
@@ -118,6 +114,25 @@ nav .sign-up a {
   color: white;
   background-color: var(--purple);
   transition: all 0.3s ease-in-out;
+}
+
+/***************** Home page styles *********************/
+
+.nav--search--input {
+  padding: 8px;
+  border: 1px solid #979797;
+  border-radius: 10px;
+  min-width: 200px;
+  width: 150px;
+  background-image: url("search.png");
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.nav--search--input:focus {
+  width: 300px;
 }
 
 /***************** sign-in page styles ******************/
@@ -216,6 +231,7 @@ input::placeholder {
 }
 
 .remember-me {
+  padding: 10px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
