@@ -42,6 +42,10 @@ textarea {
   font-family: "Raleway";
 }
 
+a {
+  text-decoration: none;
+}
+
 /********************** Navbar ***********************/
 
 .purple-text {
@@ -88,17 +92,28 @@ nav a {
   border-bottom: 5px solid var(--purple);
   transition: all 0.1s ease;
 }
+
 .icons + .icons {
   margin-left: 5px;
 }
 
-/* .sign-up {
-  font-family: "Poppins";
-  font-weight: 600;
-  font-size: 16px;
-  background-color: white;
-  color: var(--purple);
-} */
+.nav--search--input {
+  padding: 8px;
+  border: 1px solid #979797;
+  border-radius: 10px;
+  min-width: 200px;
+  width: 150px;
+  background-image: url("search.png");
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.nav--search--input:focus {
+  width: 300px;
+  outline: none;
+}
 
 nav .sign-up {
   padding: 5px 25px;
@@ -118,21 +133,72 @@ nav .sign-up a {
 
 /***************** Home page styles *********************/
 
-.nav--search--input {
+.discount {
   padding: 8px;
-  border: 1px solid #979797;
-  border-radius: 10px;
-  min-width: 200px;
-  width: 150px;
-  background-image: url("search.png");
-  background-repeat: no-repeat;
-  background-position: 95% 50%;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.6s ease-in-out;
+  text-align: center;
+  color: white;
+  background-color: #2a0d44;
 }
 
-.nav--search--input:focus {
-  width: 300px;
+.main-container {
+  padding: 25px;
+}
+
+div.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+div.hero-text {
+  width: 50%;
+}
+
+h1.hero-text {
+  font-family: "Raleway";
+  font-size: clamp(32px, 56px, 56px);
+}
+
+h1.hero-text + p {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+div.hero-text > * {
+  padding: 20px 0;
+}
+
+.hero-search {
+  padding: 10px 40px;
+  border: 1px solid #979797;
+  border-radius: 10px 0 0 10px;
+  width: 80%;
+  position: relative;
+  background-image: url("search.png");
+  background-repeat: no-repeat;
+  background-position: 1% 50%;
+}
+
+.hero-search:focus {
+  outline: none;
+}
+
+div.hero-button {
+  font-family: "Poppins";
+  color: white;
+  background-color: var(--purple);
+  padding: 9px;
+  position: absolute;
+  border: none;
+  outline: none;
+  display: inline;
+  border-radius: 0 10px 10px 0;
+}
+
+.arrow-right {
+  font-weight: bolder;
+  font-size: 25px;
 }
 
 /***************** sign-in page styles ******************/
