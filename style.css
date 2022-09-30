@@ -1,9 +1,8 @@
 /************** default styles **********************/
 
 @import url("http://fonts.cdnfonts.com/css/futura-lt");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 :root {
   --purple: rgba(125, 38, 205, 1);
   --deep-purple: rgb(65, 0, 126);
@@ -19,23 +18,28 @@ body {
   background: #f5f5f5;
   margin: 0;
   padding: 0;
-  font-family: "Poppins";
+  font-family: "DM Sans";
   padding-bottom: 5px;
 }
+
 button {
   cursor: pointer;
 }
 
 input {
-  font-family: "Poppins";
+  font-family: "DM Sans";
 }
 
 textarea {
   padding: 5px;
   resize: none;
-  font-family: "Poppins";
+  font-family: "DM Sans";
   width: 100%;
   border-color: #939393;
+}
+
+section {
+  padding: 20px 0;
 }
 
 .raleway {
@@ -44,6 +48,16 @@ textarea {
 
 a {
   text-decoration: none;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
 }
 
 /********************** Navbar ***********************/
@@ -143,8 +157,12 @@ nav .sign-up a {
 .main-container {
   padding: 25px;
 }
+.hero-img img {
+  width: 600px;
+}
 
 div.hero {
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -185,7 +203,7 @@ div.hero-text > * {
 }
 
 div.hero-button {
-  font-family: "Poppins";
+  font-family: "DM Sans";
   color: white;
   background-color: var(--purple);
   padding: 9px;
@@ -194,6 +212,7 @@ div.hero-button {
   outline: none;
   display: inline;
   border-radius: 0 10px 10px 0;
+  box-shadow: 0px 4px 8px rgba(125, 38, 205, 0.3);
 }
 
 .arrow-right {
@@ -201,6 +220,153 @@ div.hero-button {
   font-size: 25px;
 }
 
+.purple-text.arrow-link:hover {
+  margin-right: 10px;
+  transition: all 0.5s;
+}
+
+.testimony {
+  display: flex;
+  justify-content: center;
+}
+
+.testimony-card {
+  padding: 0 80px;
+}
+
+.testimony-card > .raleway {
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.testimony-card > p {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.bordered {
+  border-right: 1px solid #d4b7ee;
+  border-left: 1px solid #d4b7ee;
+}
+
+.heading h1 {
+  font-family: "Raleway";
+  text-align: center;
+  line-height: 60px;
+  padding-top: 50px;
+}
+
+.heading p {
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+}
+
+button.filter-button {
+  padding: 15px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  font-family: "DM Sans";
+}
+
+button.active {
+  background-color: #d4b7ee;
+  transition: all 0.5s ease;
+}
+
+section.courses {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+}
+
+.course-card-container {
+  display: flex;
+  border: 1px solid #c7c7c7;
+  border-radius: 10px;
+}
+
+.course-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.course-card img {
+  width: 100%;
+  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
+}
+
+.course-card-bottom-div {
+  padding: 15px;
+}
+
+.course-card-bottom-div h3 {
+  color: #525252;
+}
+
+.course-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  align-items: center;
+}
+
+.course-details:first-of-type {
+  border-bottom: 1px solid #e5d4f5;
+}
+
+.course-details:last-of-type {
+  padding-bottom: 0;
+}
+
+.level {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.level p,
+.rating p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #525252;
+}
+
+div.level img {
+  width: 20px;
+  height: 20px;
+}
+
+div.rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+div.rating img {
+  width: 20px;
+  height: 20px;
+}
+
+.dollar-rate {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.red-heart-background {
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  padding: 10px;
+}
 /***************** sign-in page styles ******************/
 
 .form-content {
@@ -263,7 +429,7 @@ div.hero-button {
 }
 
 input::placeholder {
-  font-family: "Poppins";
+  font-family: "DM Sans";
 }
 
 .right-col input[type="email"] {
@@ -407,7 +573,7 @@ form button.sign-up:hover {
 textarea {
   padding: 5px;
   resize: none;
-  font-family: "Poppins";
+  font-family: "DM Sans";
   width: 100%;
   border-color: #939393;
 }
@@ -423,7 +589,7 @@ form button.send-message {
   border-radius: 5px;
   background-color: var(--purple);
   color: white;
-  font-family: "Poppins";
+  font-family: "DM Sans";
   margin-bottom: 30px;
 }
 
@@ -531,7 +697,7 @@ form button.send-message:active {
 .contact-card > h5 {
   line-height: 24px;
   margin-top: 20px;
-  font-family: "Poppins", sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 .social-icon-div {
