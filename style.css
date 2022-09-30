@@ -219,13 +219,20 @@ div.hero-button {
   font-weight: bolder;
   font-size: 25px;
 }
+.purple-text.arrow-link {
+  font-weight: 700;
+}
 
 .purple-text.arrow-link:hover {
   margin-right: 10px;
   transition: all 0.5s;
 }
 
-.testimony {
+section.testimony {
+  margin-top: 20px;
+}
+
+div.testimony {
   display: flex;
   justify-content: center;
 }
@@ -250,6 +257,10 @@ div.hero-button {
   border-left: 1px solid #d4b7ee;
 }
 
+.heading {
+  padding: 10px 0;
+}
+
 .heading h1 {
   font-family: "Raleway";
   text-align: center;
@@ -261,10 +272,13 @@ div.hero-button {
   font-size: 16px;
   line-height: 30px;
   text-align: center;
+  margin: 25px 0;
 }
 
 button.filter-button {
-  padding: 15px;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 4px 10px;
   margin-right: 20px;
   margin-bottom: 20px;
   background-color: white;
@@ -366,6 +380,50 @@ div.rating img {
   background-color: #f5f5f5;
   border-radius: 5px;
   padding: 10px;
+}
+
+.view-all-courses-button {
+  font-family: "DM Sans";
+  text-align: center;
+  text-align: center;
+  padding: 12px 32px;
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+  color: var(--purple);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  border: 1px solid #d4d4d4;
+  display: block;
+  margin: 0 auto;
+}
+
+section.feature {
+  margin: 80px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 60px;
+}
+
+.feature-image {
+  width: 40%;
+}
+
+.feature-image img {
+  border-radius: 15px;
+}
+
+.feature-text {
+  width: 30%;
+}
+
+.feature-text h1 {
+  font-family: "Raleway";
+  font-size: 40px;
+  line-height: 48px;
 }
 /***************** sign-in page styles ******************/
 
